@@ -1,25 +1,34 @@
 ﻿# DBMS-Project
+# Advanced Data Structures Implementations
+
+This repository contains implementations of several advanced data structures, including B+ Trees, Extendible Hashing, and Multi-Bucket Linked Lists. The implementations are written in C++ and include both source code and executables.
+
+## Project Structure
+
+
 
 ### B+ Tree
 
-- **AcceptedB+tree2Level.cpp**: Implementation of a two-level B+ Tree with insertion and deletion functionalities.
-- **AcceptedB+treeMultiLevel.cpp**: Implementation of a multi-level B+ Tree with enhanced scalability.
-- **Makefile**: Contains the compilation instructions for the B+ Tree implementations.
+- **AcceptedB+tree2Level.cpp / .exe**: Implementation of a two-level B+ Tree, including operations like insertion and deletion.
+- **AcceptedB+treeMultiLevel.cpp / .exe**: Implementation of a multi-level B+ Tree to handle more complex scenarios.
 
 ### Extended Hashing
 
-- **AcceptedExtendibleHashing.cpp**: Implementation of extendible hashing, a dynamic hashing technique suitable for databases.
-- **AcceptedPartialHashing.cpp**: Implementation of a partial hashing technique for comparison.
+- **AcceptedExtendibleHashing.cpp / .exe**: Implementation of extendible hashing, a dynamic hashing technique that adjusts the hash table size as needed.
+- **AcceptedPartialHashing.cpp / .exe**: Implementation of partial hashing for comparison with extendible hashing.
 
 ### Multi-Bucket Linked List
 
-- **AcceptedDoubleBucketLlinkedList.cpp**: Implementation of a multi-bucket linked list with double-bucket support.
-- **AcceptedSingleBucketLinkedList.cpp**: Implementation of a single-bucket linked list for comparison.
+- **AcceptedDoubleBucketLlinkedList.cpp / .exe**: Implementation of a multi-bucket linked list that supports two buckets per node.
+- **AcceptedSingleBucketLinkedList.cpp / .exe**: Implementation of a simpler single-bucket linked list.
 
-## How to Compile
+## How to Run
 
-For each module, navigate to the respective directory and use the provided Makefile (if available) or compile the `.cpp` files directly using a C++ compiler. For example:
+Each directory contains both source files (.cpp) and executable files (.exe). To run the executables, simply navigate to the appropriate directory and execute the `.exe` file.
+
+### Example:
 
 ```bash
-g++ -o AcceptedB+tree2Level AcceptedB+tree2Level.cpp
-```
+cd B+Tree
+./AcceptedB+tree2Level.exe
+
